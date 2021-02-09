@@ -10,7 +10,10 @@
 
     <h2>Titulo fuera del componente</h2>
 
-    <my-element>Texto que se le pasa al componente</my-element>
+    <my-element>
+        <span slot="title">Texto que se le pasa al componente en el titulo</span>
+        <span slot="parrafo">Texto que se le pasa al componente en el titulo</span>
+    </my-element>
     
     <script type="module" src="./my-element.js"></script>
 
