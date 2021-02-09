@@ -4,6 +4,10 @@ class myElement extends HTMLElement {
 
         super();
 
+        this.attachShadow({
+            mode: "open"
+        });
+
     }
 
     getStyles() {
@@ -47,7 +51,7 @@ class myElement extends HTMLElement {
 
     render() {
 
-        this.appendChild( this.getTemplate().content.cloneNode(true) );
+        this.shadowRoot.appendChild( this.getTemplate().content.cloneNode(true) );
 
     }
 
