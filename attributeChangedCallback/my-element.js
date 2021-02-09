@@ -18,14 +18,7 @@ class myElement extends HTMLElement {
 
     attributeChangedCallback(attr, oldVal, newVal) {
 
-        if (attr === "title")
-            this.title = newVal;
-
-        if (attr === "parrafo")
-            this.parrafo = newVal;
-
-        if (attr === "img")
-            this.img = newVal;
+        this[attr] = newVal;
 
     }
 
