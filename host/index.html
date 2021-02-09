@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Elements</title>
+</head>
+<body>
+
+    <h2>Titulo fuera del componente</h2>
+
+    <my-element>
+        <span slot="title">Texto que se le pasa al componente en el titulo1</span>
+        <span slot="parrafo">Texto que se le pasa al componente en el titulo</span>
+    </my-element>
+
+    <my-element class="blue">
+        <span slot="title">Texto que se le pasa al componente en el titulo 2</span>
+        <span slot="parrafo">Texto que se le pasa al componente en el titulo</span>
+    </my-element>
+
+    <my-element yellow>
+        <span slot="title">Texto que se le pasa al componente en el titulo 3</span>
+        <span slot="parrafo">Texto que se le pasa al componente en el titulo</span>
+    </my-element>
+
+    <article class="card">
+        <my-element yellow>
+            <span slot="title">Texto que se le pasa al componente en el titulo 3</span>
+            <span slot="parrafo">Texto que se le pasa al componente en el titulo</span>
+        </my-element>
+    </article>
+    
+    <script type="module" src="./my-element.js"></script>
+
+</body>
+</html>
